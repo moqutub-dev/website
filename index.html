@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrowed Tongues</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for an elegant, historical look -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="split-layout">
+        
+        <!-- Left Side: The Hero / Title Art -->
+        <section class="hero-section">
+            <canvas id="manuscriptCanvas"></canvas>
+            <div class="title-wrapper">
+                <h1 class="game-title">Borrowed<br>Tongues</h1>
+                <p class="game-subtitle">The Infinite Manuscript</p>
+            </div>
+        </section>
+
+        <!-- Right Side: The World Selection -->
+        <section class="menu-section">
+            <div class="menu-header">
+                <h2>Select a Lexicon</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="world-scroll-container" id="worldContainer">
+                <!-- World Cards will be injected here by JavaScript -->
+            </div>
+        </section>
+
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
