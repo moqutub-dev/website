@@ -276,13 +276,20 @@
             <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.5;">&copy; 2026 Borrowed Tongues. All rights reserved.</p>
         </div>
     </footer>
-<script>
-    document.body.addEventListener('click', function() {
-        var audio = document.getElementById('arabicAudio');
-        if (audio.paused) {
-            audio.play();
-        }
-    }, { once: true }); // This ensures the audio starts only once after the first click
-</script>
+<!-- Audio Player for Arabic World -->
+    <audio id="arabicAudio" loop>
+        <source src="audio/arabic.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Trigger Audio on First Interaction -->
+    <script>
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('arabicAudio');
+            if (audio.paused) {
+                audio.play();
+            }
+        }, { once: true });
+    </script>
 </body>
 </html>
